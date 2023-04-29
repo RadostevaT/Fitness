@@ -35,16 +35,85 @@
             <a href="#" class="btn btn--header">Купить абонемент</a>
           </div>
           <picture>
-            <source type="image/webp" width="500" height="556"
-              srcset="img/superman.webp 1x, img/superman@2x.webp 2x">
-            <img loading="lazy" width="500" height="556" src="img/superman.jpg"
-              srcset="img/superman@2x.jpg 2x" alt="Сверхчеловек, который подготовился к лету.">
+            <source type="image/webp" width="500" height="556" srcset="img/superman.webp 1x, img/superman@2x.webp 2x">
+            <img loading="lazy" width="500" height="556" src="img/superman.jpg" srcset="img/superman@2x.jpg 2x"
+              alt="Сверхчеловек, который подготовился к лету.">
           </picture>
         </div>
       </div>
     </header>
     <main>
-      <div class="container"></div>
+      <section class="about">
+        <div class="about__wrapper container">
+          <div class="about__text">
+            <h2>Тренажерный зал</h2>
+            <h3>Просторный зал площадью 900 кв/м</h3>
+            <p>Supergym&nbsp;&mdash; самый большой фитнес центр за&nbsp;Уралом и&nbsp;идеальное место для укрепления
+              тела и&nbsp;здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех
+              спортсменов.</p>
+            <p class="about__text--desktop">В&nbsp;зале расположены отдельная зона для Crossfit и&nbsp;кардио-зона с&nbsp;40&nbsp;тренажерами. Также
+              в&nbsp;фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</p>
+          </div>
+          <div class="about__picture">
+            <picture>
+              <source type="image/webp" width="678" height="345" media="(max-width: 1199px)"
+                srcset="img/hall/hall-tablet.webp 1x, img/hall/hall-tablet@2x.webp 2x">
+              <source type="image/webp" width="660" height="401"
+                srcset="img/hall/hall-desktop.webp 1x, img/hall/hall-desktop@2x.webp 2x">
+              <source media="(max-width: 1199px)" width="678" height="345"
+                srcset="img/hall/hall-tablet.jpg 1x, img/hall/hall-tablet@2x.jpg 2x">
+              <img loading="lazy" width="660" height="401" src="img/hall/hall-desktop.jpg"
+                srcset="img/hall/hall-desktop@2x.jpg 2x" alt="Наш зал изнутри.">
+            </picture>
+          </div>
+          <div class="about__video" data-video>
+            <a href="https://www.youtube.com/watch?v=9TZXsZItgdw" class="about__video-link" data-video-link>
+              <picture>
+                <source type="image/webp" width="320" height="167" media="(max-width: 767px)"
+                  srcset="img/video/video-preview-mobile.webp 1x, img/video/video-preview-mobile@2x.webp 2x">
+                <source type="image/webp" width="266" height="167" media="(max-width: 1199px)"
+                  srcset="img/video/video-preview-tablet.webp 1x, img/video/video-preview-tablet@2x.webp 2x">
+                <source type="image/webp" width="364" height="228"
+                  srcset="img/video/video-preview.webp 1x, img/video/video-preview@2x.webp 2x">
+                <source media="(max-width: 767px)" width="320" height="167"
+                  srcset="img/video/video-preview-mobile.jpg 1x, img/video/video-preview-mobile@2x.jpg 2x">
+                <source media="(max-width: 1199px)" width="266" height="167"
+                  srcset="img/video/video-preview-tablet.jpg 1x, img/video/video-preview-tablet@2x.jpg 2x">
+                <img loading="lazy" width="364" height="228" src="img/video/video-preview.jpg"
+                  srcset="img/video/video-preview@2x.jpg 2x" alt="Видео из нашего зала." data-video-media>
+              </picture>
+            </a>
+            <button class="about__video-button" aria-label="Запустить видео" data-video-button>
+              <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="50" cy="50" r="49" stroke="url(#paint0_linear_7653_167)" stroke-opacity="0.2"
+                  stroke-width="2" />
+                <circle cx="50" cy="50" r="36" fill="url(#paint1_linear_7653_167)" />
+                <path d="M59 49.5L46.25 56.8612L46.25 42.1388L59 49.5Z" fill="white" />
+                <defs>
+                  <linearGradient id="paint0_linear_7653_167" x1="19.774" y1="3.00672e-05" x2="105.785" y2="10.6444"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#ED0233" />
+                    <stop offset="1" stop-color="#003EB7" />
+                  </linearGradient>
+                  <linearGradient id="paint1_linear_7653_167" x1="14" y1="49.52" x2="54.1858" y2="9.18415"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#003D85" />
+                    <stop offset="0.885417" stop-color="#B80027" />
+                  </linearGradient>
+                </defs>
+              </svg>
+            </button>
+            <div class="video__iframe" data-video-iframe data-src="https://www.youtube.com/embed/9TZXsZItgdw?rel=0&showinfo=0&autoplay=1">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="subscription">
+        <div class="subscription__wrapper container">
+          <h2>Абонементы</h2>
+
+        </div>
+      </section>
     </main>
     <footer>
       <div class="container"></div>
