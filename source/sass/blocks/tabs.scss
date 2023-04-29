@@ -1,0 +1,42 @@
+.tabs {
+  margin: 0 auto;
+}
+
+.tabs__controls {
+  display: flex;
+  border-bottom: 2px solid rgba(120, 120, 120, 0.2);
+  width: max-content;
+  margin: 0 auto;
+  gap: 34px;
+  margin-bottom: 40px;
+}
+
+.tabs__control {
+  font-family: $ff-roboto-condenced;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  text-transform: none;
+  border: none;
+  padding: 10px 0;
+  color: rgba($color-sapphire, 0.5);
+  position: relative;
+}
+
+.is-active.tabs__control {
+  color: $color-sapphire;
+
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: $color-crimson;
+  }
+}
+
+.tabs__element {
+  width: 100%;
+}

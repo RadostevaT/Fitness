@@ -1458,6 +1458,10 @@ button,
   background-color: rgba(255, 255, 255, 0);
   border: 4px solid #ffffff;
   cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   -webkit-transition: opacity 0.3s ease;
   -o-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
@@ -1490,6 +1494,16 @@ button,
   .btn--header {
     width: 100%;
   }
+}
+
+.btn--subscription {
+  font-size: 12px;
+  line-height: 14px;
+  color: #102654;
+  max-width: 206px;
+  width: 100%;
+  padding: 26px;
+  border: 2px solid #102654;
 }
 
 [data-tabs=parent] {
@@ -2568,6 +2582,163 @@ button,
   .video__iframe iframe {
     width: 100%;
   }
+}
+
+.subscription {
+  background-color: #f8f9fc;
+  width: 100%;
+  position: relative;
+}
+
+.subscription__wrapper {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  max-width: 1260px;
+}
+
+.subscription__wrapper h2 {
+  font-family: "Alumni Sans", "Arial", sans-serif;
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 65px;
+  letter-spacing: 0.03em;
+  color: #102654;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 8px;
+}
+
+.subscription__inner {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.subscription__element {
+  background-color: #ffffff;
+  padding: 54px 56px 59px;
+  text-align: center;
+  border: 7px solid #ffffff;
+}
+.subscription__element h3 {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 29px;
+  color: #102654;
+  margin: 0;
+  margin-bottom: 10px;
+}
+.subscription__element p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #495a7d;
+  margin-bottom: 100px;
+  margin: 0;
+  margin-bottom: 65px;
+}
+@media (hover: hover) {
+  .subscription__element:hover:not(.focus-visible) {
+    border: 7px solid rgba(255, 255, 255, 0);
+    -o-border-image: -o-linear-gradient(305deg, rgb(209, 10, 66) 0%, rgb(0, 53, 159) 100%);
+       border-image: linear-gradient(145deg, rgb(209, 10, 66) 0%, rgb(0, 53, 159) 100%);
+    border-image-slice: 1;
+  }
+  .subscription__element:hover:not(.focus-visible) .btn--subscription {
+    background: -o-linear-gradient(352.95deg, #ED0233 17.6%, #003EB7 95.31%);
+    background: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
+    color: #ffffff;
+    border: 0;
+  }
+}
+
+.subscription__element-price {
+  position: relative;
+  margin-bottom: 32px;
+}
+.subscription__element-price p {
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  margin: 0;
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 150px;
+  color: #e8e8e8;
+  opacity: 0.48;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.subscription__element-price b {
+  position: relative;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 90px;
+  z-index: 1;
+  color: #103aae;
+}
+.subscription__element-price span {
+  color: #102654;
+  font-weight: 400;
+}
+
+.subscription__picture {
+  position: absolute;
+  bottom: -17.7%;
+  right: 0;
+}
+
+.tabs {
+  margin: 0 auto;
+}
+
+.tabs__controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 2px solid rgba(120, 120, 120, 0.2);
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 0 auto;
+  gap: 34px;
+  margin-bottom: 40px;
+}
+
+.tabs__control {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  text-transform: none;
+  border: none;
+  padding: 10px 0;
+  color: rgba(16, 38, 84, 0.5);
+  position: relative;
+}
+
+.is-active.tabs__control {
+  color: #102654;
+}
+.is-active.tabs__control::before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #d10a42;
+}
+
+.tabs__element {
+  width: 100%;
 }
 
 /* @mixin hover-focus {
