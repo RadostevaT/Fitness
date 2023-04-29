@@ -8,6 +8,16 @@
   padding-top: 120px;
   padding-bottom: 120px;
   max-width: 1260px;
+
+  @include vp-1199 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  @include vp-767 {
+    padding-top: 64px;
+    padding-bottom: 70px;
+  }
 }
 
 .subscription__wrapper h2 {
@@ -20,12 +30,35 @@
   text-align: center;
   margin: 0;
   margin-bottom: 8px;
+
+  @include vp-1199 {
+    font-size: 42px;
+    line-height: 50px;
+    margin-bottom: 12px;
+  }
+
+  @include vp-767 {
+    font-size: 32px;
+    line-height: 38px;
+  }
 }
 
 .subscription__inner {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 40px;
+
+  @include vp-1199 {
+    margin: 0 auto;
+    max-width: 442px;
+    grid-template-columns: 1fr;
+  }
+
+  @include vp-767 {
+    max-width: none;
+    width: 100%;
+    gap: 34px;
+  }
 }
 
 .subscription__element {
@@ -33,6 +66,9 @@
   padding: 54px 56px 59px;
   text-align: center;
   border: 7px solid $color-default-white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   h3 {
     font-weight: 700;
@@ -64,11 +100,28 @@
       border: 0;
     }
   }
+
+  @include vp-1199 {
+    padding: 56px 56px 60px;
+  }
+
+  @include vp-767 {
+    padding: 44px 30px 49px;
+
+    h3 {
+      font-size: 22px;
+      line-height: 24px;
+    }
+
+    p {
+      margin: 0 0 47px;
+    }
+  }
 }
 
 .subscription__element-price {
   position: relative;
-  margin-bottom: 32px;
+  margin-bottom: 36px;
 
   p {
     position: absolute;
@@ -97,10 +150,31 @@
     color: $color-sapphire;
     font-weight: 400;
   }
+
+  @include vp-767 {
+    p {
+      font-size: 80px;
+      line-height: 120px;
+    }
+
+    b {
+      font-size: 48px;
+      line-height: 72px;
+      bottom: -7px;
+    }
+  }
 }
 
 .subscription__picture {
   position: absolute;
   bottom: -17.7%;
   right: 0;
+
+  @include vp-1199 {
+    bottom: -7%;
+  }
+
+  @include vp-767 {
+    display: none;
+  }
 }

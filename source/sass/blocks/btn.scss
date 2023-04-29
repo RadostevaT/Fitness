@@ -45,11 +45,14 @@
 }
 
 .btn--subscription {
+  display: flex;
+  align-items: center;
   font-size: 12px;
   line-height: 14px;
   color: $color-sapphire;
   max-width: 206px;
   width: 100%;
-  padding: 26px;
+  padding: 23px;
+  min-height: 64px;
   border: 2px solid $color-sapphire;
 }
