@@ -56,3 +56,16 @@
   min-height: 64px;
   border: 2px solid $color-sapphire;
 }
+
+.btn--promo {
+  width: 100%;
+  font-size: 12px;
+  line-height: 14px;
+
+  @include vp-1199 {
+    font-size: 10px;
+    line-height: 12px;
+    border-width: 2px;
+    padding: 12px;
+  }
+}
