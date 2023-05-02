@@ -69,3 +69,17 @@
     padding: 12px;
   }
 }
+
+.btn--coaches {
+  padding: 0;
+  border: 0;
+  width: calc((100vw - 1160px)/2);
+  height: 100%;
+  z-index: 1;
+
+  &-prev {
+    position: absolute;
+    top: 0;
+    left: -40px;
+  }
+}
