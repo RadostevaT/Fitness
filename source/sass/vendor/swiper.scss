@@ -183,7 +183,7 @@
 .swiper-button-next {
   position: absolute;
   top: 0;
-  width: calc((100vw - 1160px) / 2);
+  width: calc((100vw - 1260px) / 2);
   min-width: 52px;
   height: 100%;
   z-index: 10;
@@ -194,11 +194,11 @@
   background-color: transparent;
   border: 0;
 
-  @media (max-width: 1280px) {
+  @media (max-width: 1279px) {
     width: calc((100vw - 840px) / 2);
   }
 
-  @media (max-width: 1024px) {
+  @media (max-width: 1023px) {
     width: calc((100vw - 566px) / 2);
   }
 

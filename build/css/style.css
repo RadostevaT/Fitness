@@ -573,7 +573,7 @@ template {
 .swiper-button-next {
   position: absolute;
   top: 0;
-  width: calc((100vw - 1160px) / 2);
+  width: calc((100vw - 1260px) / 2);
   min-width: 52px;
   height: 100%;
   z-index: 10;
@@ -590,13 +590,13 @@ template {
   background-color: transparent;
   border: 0;
 }
-@media (max-width: 1280px) {
+@media (max-width: 1279px) {
   .swiper-button-prev,
 .swiper-button-next {
     width: calc((100vw - 840px) / 2);
   }
 }
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
   .swiper-button-prev,
 .swiper-button-next {
     width: calc((100vw - 566px) / 2);
@@ -3150,7 +3150,6 @@ button,
 }
 
 .coaches__text h3 {
-  position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
@@ -3176,6 +3175,7 @@ button,
           flex-direction: column;
   padding: 75px 31px 20px;
   text-align: center;
+  overflow-y: auto;
 }
 .coaches__info p {
   margin: 0;
