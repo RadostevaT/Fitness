@@ -51,30 +51,45 @@
 
 .coaches__element {
   position: relative;
+  display: grid;
 
   @include hover-focus {
-    .coaches__info {
-      display: flex;
+    .coaches__text {
+      display: block;
+      padding: 52px 31px 20px;
+      place-items: normal start;
       background-color: rgba($color-sapphire, 0.89);
+      overflow-y: auto;
+
+      @include vp-767 {
+        padding: 42px 15px 15px;
+      }
+    }
+
+    .coaches__info {
+      display: block;
+      transform: translateY(-4px);
     }
 
     .coaches__text h3 {
-      z-index: 1;
-      top: 0;
-      padding: 52px 0 0;
-
-      @include vp-767 {
-        padding-top: 42px;
-      }
+      padding-bottom: 0;
     }
   }
 }
 
 .coaches__text {
+  display: grid;
+  place-items: end center;
+  max-height: 294px;
+  grid-column: 1/-1;
+  grid-row: 1/2;
+  z-index: 1;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
   h3 {
-    // position: absolute;
-    bottom: 0;
-    left: 0;
     width: 100%;
     text-align: center;
     margin: 0;
@@ -83,24 +98,22 @@
     font-size: 18px;
     line-height: 27px;
   }
+
+  @include vp-1199 {
+    aspect-ratio: 134 / 147;
+  }
+
+  @include vp-767 {
+    max-height: 100%;
+    aspect-ratio: 113 / 137;
+  }
 }
 
 .coaches__info {
   display: none;
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
-  height: 100%;
   color: $color-default-white;
-  flex-direction: column;
-  padding: 75px 31px 20px;
   text-align: center;
-  overflow-y: auto;
-
-  // &::-webkit-scrollbar {
-  //   display: none;
-  // }
 
   p {
     margin: 0;
@@ -138,23 +151,26 @@
   }
 
   @include vp-767 {
-    padding: 65px 15px 15px;
-
     ul {
       padding-left: 35px;
     }
   }
 }
 
-.coaches__picture img {
-  object-fit: cover;
-  width: 100%;
+.coaches__picture {
+  grid-column: 1 / -1;
+  grid-row: 1 / 2;
 
-  @include vp-1199 {
-    aspect-ratio: 134 / 147;
-  }
+  & img {
+    object-fit: cover;
+    width: 100%;
 
-  @include vp-767 {
-    aspect-ratio: 113 / 137;
+    @include vp-1199 {
+      aspect-ratio: 134 / 147;
+    }
+
+    @include vp-767 {
+      aspect-ratio: 113 / 137;
+    }
   }
 }
