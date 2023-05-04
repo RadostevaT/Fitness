@@ -84,7 +84,6 @@
     font-size: 16px;
     line-height: 24px;
     color: $color-chambray;
-    margin-bottom: 100px;
     margin: 0;
     margin-bottom: 65px;
   }
@@ -95,7 +94,7 @@
     border-image-slice: 1;
 
     .btn--subscription {
-      background: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
+      background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
       color: $color-default-white;
       border: 0;
     }
