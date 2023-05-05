@@ -1,0 +1,151 @@
+.actions__wrapper {
+  max-width: 1260px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  h2 {
+    font-family: $ff-alumni-sans;
+    font-weight: 600;
+    font-size: 54px;
+    line-height: 65px;
+    letter-spacing: 0.03em;
+    color: $color-sapphire;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 34px;
+  }
+
+  @include vp-1199 {
+    padding-top: 92px;
+
+    h2 {
+      font-size: 42px;
+      line-height: 50px;
+      margin-bottom: 40px;
+    }
+  }
+
+  @include vp-767 {
+    padding-top: 64px;
+
+    h2 {
+      font-size: 32px;
+      line-height: 38px;
+      margin-bottom: 42px;
+    }
+  }
+}
+
+.actions__inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+
+  @include vp-1199 {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
+
+.actions__main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  @include vp-1199 {
+    grid-template-columns: 1fr 399px;
+  }
+
+  @include vp-767 {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+}
+
+.actions__main-text {
+  background-color: $color-torch-red;
+  padding: 33px 45px 45px;
+  display: flex;
+  flex-direction: column;
+  color: $color-default-white;
+
+  p {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 44px;
+    margin: 0;
+  }
+
+  b {
+    font-size: 70px;
+    line-height: 80px;
+    margin-bottom: 4px;
+    transform: translateY(-10px);
+  }
+
+  span {
+    display: block;
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  @include vp-767 {
+    b {
+      margin-bottom: 0;
+    }
+
+    span {
+      margin-bottom: 28px;
+    }
+  }
+}
+
+.actions__list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+
+  @include vp-1199 {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+
+  @include vp-767 {
+    grid-template-columns: 1fr;
+  }
+}
+
+.actions__element {
+  padding: 21px 28px 26px;
+  border: 7px solid $color-transparent;
+  border-image: linear-gradient(145deg, #d10a42 0, #00359f 100%);
+  border-image-slice: 1;
+  height: 211px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+
+  b {
+    font-size: 26px;
+    line-height: 32px;
+    display: block;
+    margin-bottom: 7px;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 22px;
+    margin: 0;
+  }
+
+  @include vp-767 {
+    text-align: center;
+    padding: 33px 28px 39px;
+  }
+}
+
+
+.actions__main-picture img {
+  @include vp-767 {
+    width: 100%;
+  }
+}

@@ -83,3 +83,25 @@
     left: -40px;
   }
 }
+
+.btn--actions {
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  border: none;
+  padding: 1px 0;
+  width: fit-content;
+  border-bottom: 1px solid $color-default-white;
+  margin-top: auto;
+
+  @include vp-767 {
+    align-self: center;
+  }
+}
+
+.btn--actions-blue {
+  font-size: 12px;
+  line-height: 14px;
+  color: $color-resolution-blue;
+  border-color: $color-resolution-blue;
+}
