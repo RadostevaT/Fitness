@@ -40,4 +40,18 @@ const initSwiperCoaches = () => {
   });
 };
 
-export {initSwiperCoaches};
+const initSwiperReviews = () => {
+  const swiper = new Swiper('[data-swiper-reviews]', { // eslint-disable-line
+    direction: 'horizontal',
+    loop: false,
+
+    navigation: {
+      nextEl: '.review__button-next',
+      prevEl: '.review__button-prev',
+    },
+
+    slidesPerView: 1,
+  });
+};
+
+export {initSwiperCoaches, initSwiperReviews};
