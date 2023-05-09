@@ -2,6 +2,7 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {Form} from './modules/form-validate/form';
 import {initTabs} from './modules/tabs/init-tabs';
 import {initSwiperCoaches, initSwiperReviews} from './modules/initSwiper';
+import {initScroll} from './modules/scrollTo';
 import './modules/initVideo';
 
 // ---------------------------------
@@ -22,6 +23,7 @@ window.addEventListener('DOMContentLoaded', () => {
     initTabs();
     initSwiperCoaches();
     initSwiperReviews();
+    initScroll();
     const form = new Form();
     window.form = form;
     form.init();

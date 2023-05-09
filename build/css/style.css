@@ -1720,14 +1720,14 @@ button,
 .custom-input label textarea:hover:not(.focus-visible),
 .custom-textarea label input:hover:not(.focus-visible),
 .custom-textarea label textarea:hover:not(.focus-visible) {
-    opacity: 0.8;
+    opacity: 0.7;
   }
 }
 .custom-input label input.focus-visible:focus,
 .custom-input label textarea.focus-visible:focus,
 .custom-textarea label input.focus-visible:focus,
 .custom-textarea label textarea.focus-visible:focus {
-  opacity: 0.8;
+  opacity: 0.7;
 }
 @media screen and (max-width: 767px) {
   .custom-input__label,
@@ -3689,7 +3689,7 @@ button,
 }
 @media (max-width: 1199px) {
   .contacts {
-    padding: 62px 163px 69px 133px;
+    padding: 62px 163px 63px 133px;
   }
   .contacts h2 {
     font-size: 42px;
@@ -3699,7 +3699,7 @@ button,
 }
 @media (max-width: 767px) {
   .contacts {
-    padding: 65px 15px;
+    padding: 65px 15px 64px;
   }
   .contacts h2 {
     font-size: 32px;
@@ -3762,6 +3762,19 @@ button,
   margin: 0;
   color: #102654;
 }
+.contacts__item a {
+  -webkit-transition: opacity 0.3s ease;
+  -o-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+@media (hover: hover) {
+  .contacts__item a:hover:not(.focus-visible) {
+    opacity: 0.7;
+  }
+}
+.contacts__item a.focus-visible:focus {
+  opacity: 0.7;
+}
 @media (max-width: 1199px) {
   .contacts__item b {
     font-size: 20px;
@@ -3780,6 +3793,159 @@ button,
         -ms-flex-order: 1;
             order: 1;
   }
+}
+
+.footer {
+  background-color: #030a1a;
+}
+
+.footer__wrapper {
+  max-width: 1260px;
+  padding-top: 41px;
+  padding-bottom: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media (max-width: 1199px) {
+  .footer__wrapper {
+    padding-bottom: 41px;
+  }
+}
+@media (max-width: 767px) {
+  .footer__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: relative;
+    padding-top: 46px;
+    padding-bottom: 46px;
+  }
+}
+
+.footer__logo-link {
+  text-transform: uppercase;
+  font-family: "Alumni Sans", "Arial", sans-serif;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  margin-right: auto;
+  margin-top: 4px;
+  -webkit-transition: opacity 0.3s ease;
+  -o-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+@media (hover: hover) {
+  .footer__logo-link:hover:not(.focus-visible) {
+    opacity: 0.7;
+  }
+}
+.footer__logo-link.focus-visible:focus {
+  opacity: 0.7;
+}
+@media (max-width: 1199px) {
+  .footer__logo-link {
+    font-size: 24px;
+    line-height: 29px;
+    margin-top: 0;
+  }
+}
+@media (max-width: 767px) {
+  .footer__logo-link {
+    position: absolute;
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+.footer__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 40px;
+  margin: 0;
+  margin-right: auto;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding: 0 0 8px 8px;
+}
+@media (max-width: 1199px) {
+  .footer__nav {
+    padding: 0;
+    padding-left: 15px;
+    gap: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .footer__nav {
+    -webkit-column-count: 2;
+       -moz-column-count: 2;
+            column-count: 2;
+    gap: 31px;
+    display: block;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    margin-bottom: 24px;
+  }
+}
+
+.footer__nav-item {
+  font-size: 14px;
+  line-height: 16px;
+  -webkit-transition: opacity 0.3s ease;
+  -o-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+  display: block;
+}
+.footer__nav-item a {
+  color: #ffffff;
+}
+@media (hover: hover) {
+  .footer__nav-item:hover:not(.focus-visible) {
+    opacity: 0.7;
+  }
+}
+.footer__nav-item.focus-visible:focus {
+  opacity: 0.7;
+}
+@media (max-width: 767px) {
+  .footer__nav-item {
+    font-size: 16px;
+    line-height: 19px;
+    max-width: 250px;
+    width: 100%;
+  }
+  .footer__nav-item:first-child {
+    margin-top: 42px;
+  }
+  .footer__nav-item:not(:last-child) {
+    margin-bottom: 22px;
+  }
+}
+
+.footer__socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 11px;
+}
+.footer__socials a {
+  -webkit-transition: opacity 0.3s ease;
+  -o-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+@media (hover: hover) {
+  .footer__socials a:hover:not(.focus-visible) {
+    opacity: 0.7;
+  }
+}
+.footer__socials a.focus-visible:focus {
+  opacity: 0.7;
 }
 
 /* @mixin hover-focus {
