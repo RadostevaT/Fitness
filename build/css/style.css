@@ -2061,6 +2061,10 @@ button,
   }
 }
 
+.header__picture {
+  background-color: #102654;
+}
+
 .about__wrapper {
   max-width: 1260px;
   padding-top: 120px;
@@ -2172,6 +2176,9 @@ button,
   }
 }
 
+.about__picture {
+  background-color: #f8f9fc;
+}
 @media (max-width: 767px) {
   .about__picture img {
     width: 100%;
@@ -2708,6 +2715,9 @@ button,
   }
 }
 
+.promo__picture {
+  background-color: #102654;
+}
 @media (max-width: 1199px) {
   .promo__picture img {
     width: 386px;
@@ -3390,6 +3400,9 @@ button,
   }
 }
 
+.actions__main-picture {
+  background-color: #2e35ac;
+}
 @media (max-width: 767px) {
   .actions__main-picture img {
     width: 100%;

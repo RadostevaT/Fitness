@@ -146,8 +146,12 @@
 }
 
 
-.actions__main-picture img {
-  @include vp-767 {
-    width: 100%;
+.actions__main-picture {
+  background-color: $color-persian-blue;
+
+  img {
+    @include vp-767 {
+      width: 100%;
+    }
   }
 }

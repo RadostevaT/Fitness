@@ -127,7 +127,10 @@
   }
 }
 
-.promo__picture img {
+.promo__picture {
+  background-color: $color-sapphire;
+
+img {
   @include vp-1199 {
     width: 386px;
     height: 292px;
@@ -138,4 +141,5 @@
     height: 293px;
     object-fit: cover;
   }
+}
 }
