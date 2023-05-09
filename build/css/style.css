@@ -3159,10 +3159,10 @@ button,
   font-weight: 700;
   font-size: 71px;
   line-height: 60px;
-  background: -o-linear-gradient(322.39deg, #D10A42 0%, #0041CA 45.58%);
-  background: linear-gradient(127.61deg, #D10A42 0%, #0041CA 45.58%);
-  background-clip: text;
+  background: -o-linear-gradient(322.39deg, #d10a42 0%, #0041ca 45.58%);
+  background: linear-gradient(127.61deg, #d10a42 0%, #0041ca 45.58%);
   -webkit-background-clip: text;
+          background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .advantages__value p {
@@ -3185,8 +3185,8 @@ button,
   .advantages__value b {
     background: -o-linear-gradient(322.39deg, #d10a42 0%, #0041ca 87.33%);
     background: linear-gradient(127.61deg, #d10a42 0%, #0041ca 87.33%);
-    background-clip: text;
     -webkit-background-clip: text;
+            background-clip: text;
     -webkit-text-fill-color: transparent;
   }
 }
@@ -3450,8 +3450,8 @@ button,
 
 .review__element {
   background-color: #1c3374;
-  -webkit-box-shadow: 0px 0px 40px rgba(28, 51, 116, 0.2);
-          box-shadow: 0px 0px 40px rgba(28, 51, 116, 0.2);
+  -webkit-box-shadow: 0 0 40px rgba(28, 51, 116, 0.2);
+          box-shadow: 0 0 40px rgba(28, 51, 116, 0.2);
   padding: 62px 60px 58px 62px;
   color: #ffffff;
   display: -ms-grid;

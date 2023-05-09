@@ -51,7 +51,7 @@
 
 .review__element {
   background-color: $color-resolution-blue;
-  box-shadow: 0px 0px 40px rgba(28, 51, 116, 0.2);
+  box-shadow: 0 0 40px rgba(28, 51, 116, 0.2);
   padding: 62px 60px 58px 62px;
   color: $color-default-white;
   display: grid;
@@ -67,7 +67,6 @@
 
 .review__text {
   margin-top: -8px;
-  ;
 
   h3 {
     margin: 0;
