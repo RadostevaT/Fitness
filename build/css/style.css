@@ -2107,7 +2107,7 @@ button,
   max-width: 365px;
   margin: 0 auto;
 }
-.about__text--desktop {
+.about__text-hidden {
   display: block;
 }
 .about__text h2 {
@@ -2144,7 +2144,7 @@ button,
     padding: 0 88px;
     text-align: center;
   }
-  .about__text--desktop {
+  .about__text-hidden {
     display: none;
   }
   .about__text h2 {
@@ -2284,19 +2284,19 @@ button,
   }
 }
 
-.video__iframe iframe {
+.about__video-iframe iframe {
   border: none;
   width: 364px;
   height: 228px;
 }
 @media (max-width: 1199px) {
-  .video__iframe iframe {
+  .about__video-iframe iframe {
     width: 266px;
     height: 167px;
   }
 }
 @media (max-width: 767px) {
-  .video__iframe iframe {
+  .about__video-iframe iframe {
     width: 100%;
   }
 }
