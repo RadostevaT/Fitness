@@ -1756,7 +1756,7 @@ button,
 .custom-input.is-invalid textarea,
 .custom-textarea.is-invalid input,
 .custom-textarea.is-invalid textarea {
-  border: 2px solid #ff1553;
+  border: 1px solid #ff1553;
 }
 .custom-input.is-invalid input:focus, .custom-input.is-invalid input:hover,
 .custom-input.is-invalid textarea:focus,
@@ -1765,16 +1765,16 @@ button,
 .custom-textarea.is-invalid input:hover,
 .custom-textarea.is-invalid textarea:focus,
 .custom-textarea.is-invalid textarea:hover {
-  border: 2px solid rgba(255, 21, 83, 0.5);
+  border: 1px solid rgba(255, 21, 83, 0.5);
 }
 .custom-input.is-valid input,
 .custom-textarea.is-valid input {
-  border: 2px solid #22b259;
+  border: 1px solid #22b259;
 }
 .custom-input.is-valid input:focus, .custom-input.is-valid input:hover,
 .custom-textarea.is-valid input:focus,
 .custom-textarea.is-valid input:hover {
-  border: 2px solid rgba(34, 178, 89, 0.5);
+  border: 1px solid rgba(34, 178, 89, 0.5);
 }
 .custom-input .input-message,
 .custom-textarea .input-message {
