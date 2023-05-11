@@ -2172,9 +2172,6 @@ button,
   }
 }
 
-.about__picture {
-  background-color: #f8f9fc;
-}
 @media (max-width: 767px) {
   .about__picture img {
     width: 100%;

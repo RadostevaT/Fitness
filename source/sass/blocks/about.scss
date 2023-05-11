@@ -105,8 +105,6 @@
 }
 
 .about__picture {
-  background-color: $color-ghost-white;
-
   img {
     @include vp-767 {
       width: 100%;
