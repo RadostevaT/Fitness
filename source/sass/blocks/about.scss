@@ -26,7 +26,7 @@
   max-width: 365px;
   margin: 0 auto;
 
-  &--desktop {
+  &-hidden {
     display: block;
   }
 
@@ -67,7 +67,7 @@
     padding: 0 88px;
     text-align: center;
 
-    &--desktop {
+    &-hidden {
       display: none;
     }
 
@@ -204,7 +204,7 @@
   }
 }
 
-.video__iframe iframe {
+.about__video-iframe iframe {
   border: none;
   width: 364px;
   height: 228px;
