@@ -15,10 +15,12 @@ const createIframe = (block) => {
 };
 
 button.addEventListener('click', () => {
-  if (video && iframeBlock) {
-    button.remove();
-    link.remove();
-    const newIframe = createIframe(iframeBlock);
-    iframeBlock.append(newIframe);
+  if (button) {
+    if (video && iframeBlock) {
+      button.remove();
+      link.remove();
+      const newIframe = createIframe(iframeBlock);
+      iframeBlock.append(newIframe);
+    }
   }
 });
