@@ -1822,6 +1822,8 @@ button,
   padding: 30px 0;
   position: relative;
   z-index: 10;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 @media (max-width: 1199px) {
   .header__inner {
@@ -1874,6 +1876,7 @@ button,
   -webkit-transition: opacity 0.3s ease;
   -o-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
+  white-space: nowrap;
 }
 @media (max-width: 1199px) {
   .header__phone {

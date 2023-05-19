@@ -23,6 +23,7 @@
   padding: 30px 0;
   position: relative;
   z-index: 10;
+  flex-wrap: wrap;
 
   @include vp-1199 {
     max-width: none;
@@ -65,6 +66,7 @@
   letter-spacing: 0.03em;
   color: $color-default-white;
   transition: opacity $trans-default;
+  white-space: nowrap;
 
   @include vp-1199 {
     font-size: 24px;
