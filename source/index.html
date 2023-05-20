@@ -121,7 +121,7 @@
       <section class="subscription" id="subscription">
         <div class="subscription__wrapper container">
           <h2>Абонементы</h2>
-          <div class="tabs" data-tabs="parent" data-height="max">
+          <div class="tabs" data-tabs="parent">
             <div class="tabs__controls" data-tabs="controls">
               <button class="tabs__control btn" type="button" data-tabs="control" data-index="0">1 месяц</button>
               <button class="tabs__control btn" type="button" data-tabs="control" data-index="1">6 месяцев</button>
@@ -275,9 +275,14 @@
         <div class="coaches__wrapper container">
           <h2>Тренеры</h2>
           <div class="coaches__inner">
+            <button class="swiper-button-prev" type="button">
+              <svg width="16" height="32">
+                <use xlink:href="img/sprite.svg#arrow-left"></use>
+              </svg>
+            </button>
             <div class="swiper" data-swiper-coaches>
               <div class="swiper-wrapper">
-                <div class="swiper-slide coaches__element">
+                <div class="swiper-slide coaches__element" tabindex="0">
                   <div class="coaches__text">
                     <h3>Анна Павлова</h3>
                     <div class="coaches__info">
@@ -298,7 +303,7 @@
                     </picture>
                   </div>
                 </div>
-                <div class="swiper-slide coaches__element">
+                <div class="swiper-slide coaches__element" tabindex="0">
                   <div class="coaches__text">
                     <h3>Алексей Лавров</h3>
                     <div class="coaches__info">
@@ -319,7 +324,7 @@
                     </picture>
                   </div>
                 </div>
-                <div class="swiper-slide coaches__element">
+                <div class="swiper-slide coaches__element" tabindex="0">
                   <div class="coaches__text">
                     <h3>Александр Пашков</h3>
                     <div class="coaches__info">
@@ -340,7 +345,7 @@
                     </picture>
                   </div>
                 </div>
-                <div class="swiper-slide coaches__element">
+                <div class="swiper-slide coaches__element" tabindex="0">
                   <div class="coaches__text">
                     <h3>Мария Кетова</h3>
                     <div class="coaches__info">
@@ -361,7 +366,7 @@
                     </picture>
                   </div>
                 </div>
-                <div class="swiper-slide coaches__element">
+                <div class="swiper-slide coaches__element" tabindex="0">
                   <div class="coaches__text">
                     <h3>Анна Павлова 2</h3>
                     <div class="coaches__info">
@@ -382,7 +387,7 @@
                     </picture>
                   </div>
                 </div>
-                <div class="swiper-slide coaches__element">
+                <div class="swiper-slide coaches__element" tabindex="0">
                   <div class="coaches__text">
                     <h3>Алексей Лавров 2</h3>
                     <div class="coaches__info">
@@ -403,7 +408,7 @@
                     </picture>
                   </div>
                 </div>
-                <div class="swiper-slide coaches__element">
+                <div class="swiper-slide coaches__element" tabindex="0">
                   <div class="coaches__text">
                     <h3>Александр Пашков 2</h3>
                     <div class="coaches__info">
@@ -424,7 +429,7 @@
                     </picture>
                   </div>
                 </div>
-                <div class="swiper-slide coaches__element">
+                <div class="swiper-slide coaches__element" tabindex="0">
                   <div class="coaches__text">
                     <h3>Мария Кетова 2</h3>
                     <div class="coaches__info">
@@ -447,11 +452,6 @@
                 </div>
               </div>
             </div>
-            <button class="swiper-button-prev" type="button">
-              <svg width="16" height="32">
-                <use xlink:href="img/sprite.svg#arrow-left"></use>
-              </svg>
-            </button>
             <button class="swiper-button-next" type="button">
               <svg width="16" height="32">
                 <use xlink:href="img/sprite.svg#arrow-right"></use>

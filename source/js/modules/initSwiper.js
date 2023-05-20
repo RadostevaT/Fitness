@@ -44,6 +44,7 @@ const initSwiperReviews = () => {
   const swiper = new Swiper('[data-swiper-reviews]', { // eslint-disable-line
     direction: 'horizontal',
     loop: false,
+    autoHeight: true,
 
     navigation: {
       nextEl: '.review__button-next',

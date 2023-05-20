@@ -21,6 +21,7 @@ if (button) {
       link.remove();
       const newIframe = createIframe(iframeBlock);
       iframeBlock.append(newIframe);
+      video.style.backgroundColor = 'transparent';
     }
   });
 }

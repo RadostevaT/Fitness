@@ -2175,6 +2175,17 @@ button,
   }
 }
 
+@media (max-width: 1199px) {
+  .about__picture {
+    width: 100%;
+  }
+}
+@media (max-width: 1199px) {
+  .about__picture img {
+    width: 100%;
+    height: auto;
+  }
+}
 @media (max-width: 767px) {
   .about__picture img {
     width: 100%;
@@ -2188,7 +2199,7 @@ button,
 
 .about__video {
   position: absolute;
-  bottom: 119px;
+  top: 408px;
   left: 53%;
   -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
@@ -2208,10 +2219,12 @@ button,
 }
 @media (max-width: 1199px) {
   .about__video {
-    max-width: 266px;
-    height: 167px;
+    width: 34.5%;
+    height: auto;
     left: 50%;
+    top: unset;
     bottom: 100px;
+    aspect-ratio: 1.59/1;
   }
 }
 @media (max-width: 767px) {
@@ -2225,6 +2238,7 @@ button,
     max-width: none;
     width: 100%;
     margin-top: 16px;
+    aspect-ratio: 1.91/1;
   }
 }
 
@@ -2280,20 +2294,22 @@ button,
   }
 }
 
-.about__video-iframe iframe {
+.video__iframe iframe {
   border: none;
   width: 364px;
   height: 228px;
 }
 @media (max-width: 1199px) {
-  .about__video-iframe iframe {
-    width: 266px;
-    height: 167px;
+  .video__iframe iframe {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1.59/1;
   }
 }
 @media (max-width: 767px) {
-  .about__video-iframe iframe {
+  .video__iframe iframe {
     width: 100%;
+    aspect-ratio: 1.91/1;
   }
 }
 
@@ -2575,8 +2591,8 @@ button,
   padding-bottom: 106px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 660px;
-  grid-template-columns: 1fr 660px;
+  -ms-grid-columns: 1fr minmax(600px, 660px);
+  grid-template-columns: 1fr minmax(600px, 660px);
 }
 @media (max-width: 1199px) {
   .promo__wrapper {
@@ -2599,6 +2615,7 @@ button,
   background-color: #ed0233;
   padding: 85px 78px;
   color: #ffffff;
+  min-width: 500px;
 }
 .promo__inner p {
   margin: 0;
@@ -2609,6 +2626,7 @@ button,
 @media (max-width: 1199px) {
   .promo__inner {
     padding: 50px 45px;
+    min-width: auto;
   }
   .promo__inner p {
     font-size: 12px;
@@ -2713,6 +2731,11 @@ button,
 
 .promo__picture {
   background-color: #102654;
+}
+.promo__picture img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 @media (max-width: 1199px) {
   .promo__picture img {
@@ -3262,7 +3285,7 @@ button,
   .actions__wrapper h2 {
     font-size: 32px;
     line-height: 38px;
-    margin-bottom: 42px;
+    margin-bottom: 41px;
   }
 }
 
@@ -3368,8 +3391,6 @@ button,
   -o-border-image: -o-linear-gradient(305deg, #d10a42 0, #00359f 100%);
      border-image: linear-gradient(145deg, #d10a42 0, #00359f 100%);
   border-image-slice: 1;
-  height: 211px;
-  overflow-y: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3383,22 +3404,37 @@ button,
   line-height: 32px;
   display: block;
   margin-bottom: 7px;
+  color: #1c3374;
 }
 .actions__element p {
   font-size: 16px;
   line-height: 22px;
   margin: 0;
   margin-bottom: 15px;
+  color: #1c3374;
+}
+@media (max-width: 1199px) {
+  .actions__element p {
+    margin-bottom: 50px;
+  }
 }
 @media (max-width: 767px) {
   .actions__element {
     text-align: center;
     padding: 33px 28px 39px;
   }
+  .actions__element p {
+    margin-bottom: 25px;
+  }
 }
 
 .actions__main-picture {
   background-color: #2e35ac;
+}
+.actions__main-picture img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 @media (max-width: 767px) {
   .actions__main-picture img {
@@ -3629,7 +3665,7 @@ button,
     background-color: #102654;
     width: 100%;
     max-width: none;
-    padding: 62px 163px 69px 133px;
+    padding: 62px 163px 68px 133px;
   }
   .form h2 {
     font-size: 42px;
@@ -3639,7 +3675,7 @@ button,
 }
 @media (max-width: 767px) {
   .form {
-    padding: 63px 15px 69px;
+    padding: 63px 15px 67px;
   }
   .form h2 {
     font-size: 32px;
@@ -3771,11 +3807,17 @@ button,
   line-height: 21px;
   margin: 0;
   color: #102654;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .contacts__item a {
   -webkit-transition: opacity 0.3s ease;
   -o-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
+  white-space: nowrap;
 }
 @media (hover: hover) {
   .contacts__item a:hover:not(.focus-visible) {

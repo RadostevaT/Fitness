@@ -83,10 +83,13 @@
     line-height: 21px;
     margin: 0;
     color: $color-sapphire;
+    display: flex;
+    flex-wrap: wrap;
   }
 
   a {
     transition: opacity $trans-default;
+    white-space: nowrap;
 
     @include hover-focus {
       opacity: 0.7;
